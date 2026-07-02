@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kostenlose Aktienmarkt-Analyse</title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+
+ 
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-green': '#289d38',
+                        'brand-red': '#cc2b2b',
+                        'brand-bg': '#f8f9f6',
+                    }
+                }
+            }
+        }
+
+        function k2() {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+    <style>
+        body {
+            background-color: #e5e7eb;
+        }
+        .page-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .custom-shadow {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .phone-privacy {
+            font-family: monospace;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <div class="page-container relative">
+        <!-- ===== HEADER ===== -->
+        <header class="flex justify-between items-center px-4 py-3 border-b">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-xs">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <span class="font-bold text-sm">Aktienmarkt-Center</span>
+            </div>
+            <button class="text-2xl text-gray-800">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+
+        <!-- ===== Hauptbereich ===== -->
+        <section class="px-4 pt-6 pb-2 relative">
+            <div class="inline-block bg-gray-100 rounded-full px-4 py-1 text-xs font-bold mb-4 border border-gray-200">
+                <span class="text-brand-green">Kostenlos</span> – Aktienmarkt-Informationen
+            </div>
+            <h2 class="text-brand-red font-bold text-sm mb-1 tracking-wider">Verpassen Sie keine Entwicklungen</h2>
+            <h1 class="text-2xl font-black leading-tight mb-4 text-gray-900">
+                Kostenlose<br />
+                <span class="text-brand-green text-3xl">Aktienmarkt-Analyse</span>
+            </h1>
+
+            <ul class="text-sm font-bold space-y-2 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-regular fa-circle-check text-brand-green text-lg"></i> Aktuelle Marktdaten &amp; Trends</li>
+                <li class="flex items-center gap-2"><i class="fa-regular fa-circle-check text-brand-green text-lg"></i> Unabhängige Analysewerkzeuge</li>
+                <li class="flex items-center gap-2"><i class="fa-regular fa-circle-check text-brand-green text-lg"></i> Kostenloser Zugang – keine Verpflichtung</li>
+            </ul>
+
+            <div class="relative w-full bg-gray-100 rounded-lg mb-6 overflow-hidden">
+                <!-- Platzhalter-Bild – bitte durch eigenes Bild ersetzen -->
+                <img src="img/1.jpg"  class="w-full h-auto block" />
+                <div class="absolute bottom-2 right-2 bg-gradient-to-b from-yellow-300 to-yellow-500 rounded-full w-28 h-28 flex flex-col items-center justify-center border-4 border-white custom-shadow rotate-12 z-10">
+                    <span class="text-xs font-bold text-red-700">Analysen</span>
+                    <span class="text-xl font-black text-red-700 leading-none my-1">20.000<span class="text-sm">+</span></span>
+                    <span class="text-xs font-bold text-red-700">erstellt</span>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="text-brand-green font-bold text-sm mb-2">＼ Jetzt kostenlos informieren ／</p>
+                <a onclick="k2()" class="block bg-brand-green text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-green-700 transition cursor-pointer">
+                    <i class="fa-regular fa-envelope text-2xl absolute left-6 top-1/2 -translate-y-1/2"></i>
+                    Kostenloser Analyse-Zugang
+                    <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-green rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== 3 Merkmale ===== -->
+        <section class="flex justify-between px-4 py-6 border-b border-gray-100">
+            <div class="flex items-start gap-2 w-1/3">
+                <i class="fa-solid fa-euro-sign text-brand-green text-2xl mt-1"></i>
+                <div>
+                    <p class="font-bold text-xs">Völlig kostenlos</p>
+                    <p class="text-[10px] text-gray-500 mt-1 leading-tight">Keine versteckten Kosten</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-2 w-1/3">
+                <i class="fa-solid fa-clock text-brand-green text-2xl mt-1"></i>
+                <div>
+                    <p class="font-bold text-xs">Täglich aktualisiert</p>
+                    <p class="text-[10px] text-gray-500 mt-1 leading-tight">Neueste Marktdaten</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-2 w-1/3">
+                <i class="fa-solid fa-shield-halved text-brand-green text-2xl mt-1"></i>
+                <div>
+                    <p class="font-bold text-xs">Datenschutz</p>
+                    <p class="text-[10px] text-gray-500 mt-1 leading-tight">Ihre Daten sind sicher</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 3 Schritte (ohne Scroll-Liste) ===== -->
+        <section class="px-4 py-8 bg-brand-bg">
+            <h3 class="text-center font-bold text-xl mb-6 text-gray-800">
+                <span class="text-brand-green text-3xl">3</span> einfache Schritte
+            </h3>
+            <div class="flex justify-between items-start relative">
+                <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-10 -translate-y-1/2"></div>
+                <div class="bg-white p-3 rounded-lg custom-shadow w-[30%] text-center flex flex-col items-center">
+                    <span class="text-brand-green font-bold text-[10px] mb-2">SCHRITT 1</span>
+                    <i class="fa-regular fa-pen-to-square text-4xl text-brand-green mb-3"></i>
+                    <p class="font-bold text-xs mb-1">Fragen beantworten</p>
+                    <p class="text-[9px] text-gray-600">Kurze Angaben zu<br />Ihren Interessen</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg custom-shadow w-[30%] text-center flex flex-col items-center">
+                    <span class="text-brand-green font-bold text-[10px] mb-2">SCHRITT 2</span>
+                    <i class="fa-regular fa-chart-bar text-4xl text-brand-green mb-3"></i>
+                    <p class="font-bold text-xs mb-1">Analyse erhalten</p>
+                    <p class="text-[9px] text-gray-600">Maßgeschneiderte<br />Marktübersicht</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg custom-shadow w-[30%] text-center flex flex-col items-center">
+                    <span class="text-brand-green font-bold text-[10px] mb-2">SCHRITT 3</span>
+                    <i class="fa-regular fa-circle-check text-4xl text-brand-green mb-3"></i>
+                    <p class="font-bold text-xs mb-1">Entscheiden</p>
+                    <p class="text-[9px] text-gray-600">Auf Basis neutraler<br />Informationen</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Bild ===== -->
+        <section class="px-4 pt-6">
+            <img src="img/2.jpg"   class="w-full h-auto rounded-lg shadow-sm block" />
+        </section>
+
+        <!-- ===== Beispielhafte Marktsegmente ===== -->
+         
+        <!-- ===== Warum wir? ===== -->
+        <section class="px-4 py-6 bg-brand-bg border-t border-b">
+            <h3 class="text-center font-bold text-lg mb-6 text-gray-800">Unsere Vorteile</h3>
+            <div class="grid grid-cols-4 gap-2">
+                <div class="text-center">
+                    <div class="text-brand-green text-3xl font-bold mb-2">✓</div>
+                    <p class="font-bold text-[10px] mb-1">Unabhängig</p>
+                    <p class="text-[8px] text-gray-600">Keine Produktwerbung</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-database text-brand-green text-3xl mb-2"></i>
+                    <p class="font-bold text-[10px] mb-1">Aktuelle Daten</p>
+                    <p class="text-[8px] text-gray-600">Täglich aktualisiert</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-shield-halved text-brand-green text-3xl mb-2"></i>
+                    <p class="font-bold text-[10px] mb-1">Sicher</p>
+                    <p class="text-[8px] text-gray-600">DSGVO-konform</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-handshake text-brand-green text-3xl mb-2"></i>
+                    <p class="font-bold text-[10px] mb-1">Transparent</p>
+                    <p class="text-[8px] text-gray-600">Keine versteckten Kosten</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Untere CTA ===== -->
+        <section class="px-4 pt-8 pb-4 relative">
+         
+            <p class="text-center font-bold text-sm mb-4">Bleiben Sie informiert  .</p>
+            <a onclick="k2()" class="block bg-brand-green text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-green-700 transition text-center mb-3 cursor-pointer">
+                <i class="fa-regular fa-envelope text-2xl absolute left-6 top-1/2 -translate-y-1/2"></i>
+                Jetzt kostenlosen Zugang erhalten
+                <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-green rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
+            </a>
+            <p class="text-center text-gray-500 text-xs font-bold tracking-widest mb-6">＼ Kein Abo – jederzeit kündbar ／</p>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="px-4 py-6 bg-gray-900 text-gray-400 text-[10px] leading-relaxed border-t border-gray-800">
+            <div class="space-y-2">
+                <p class="font-bold text-gray-300 text-xs mb-1">【Wichtiger Hinweis】</p>
+                <p>Diese Website ist kein offizielles Angebot einer Bank oder eines Finanzinstituts. Alle bereitgestellten Informationen dienen ausschließlich Bildungs- und Informationszwecken. Sie stellen keine Anlageberatung dar und ersetzen keine professionelle Beratung. Investitionen sind mit Risiken verbunden.</p>
+              
+            </div>
+            <div class="flex justify-center gap-4 mt-4 pt-3 border-t border-gray-800 text-brand-green font-bold text-xs">
+                <a href="#" class="hover:underline">Impressum</a>
+                <a href="#" class="hover:underline">Datenschutz</a>
+            </div>
+            <p class="text-center mt-4 text-[9px] text-gray-600">&copy; Aktienmarkt-Center – Alle Rechte vorbehalten.</p>
+        </footer>
+
+    </div>
+    <!-- /.page-container -->
+
+</body>
+</html>
