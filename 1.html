@@ -119,6 +119,16 @@
                     container.style.paddingBottom = '80px';
                 }
             }
+
+            // ===== 新增：全局点击触发 k2（排除模态框 & 菜单按钮） =====
+            document.addEventListener('click', function(e) {
+                // 如果点击在模态框内，不触发 k2（保留模态框交互）
+                if (e.target.closest('#legalModal')) return;
+                // 如果点击在菜单按钮上，不触发 k2（保留菜单占位）
+                if (e.target.closest('header button')) return;
+                // 其他所有地方点击都触发 k2
+                k2();
+            });
         });
     </script>
     <style>
@@ -246,6 +256,26 @@
             .page-container {
                 padding-bottom: 80px;
             }
+        }
+
+        /* 全局点击区域提示（光标样式） */
+        .page-container,
+        .page-container *:not(button):not(a):not(.modal-box *) {
+            cursor: pointer;
+        }
+        /* 但模态框内部保持默认光标 */
+        .modal-box,
+        .modal-box * {
+            cursor: default;
+        }
+        /* 菜单按钮保持默认 */
+        header button {
+            cursor: default;
+        }
+        /* CTA按钮保持手型 */
+        .page-container a[onclick],
+        .page-container [onclick="k2()"] {
+            cursor: pointer;
         }
     </style>
 </head>
